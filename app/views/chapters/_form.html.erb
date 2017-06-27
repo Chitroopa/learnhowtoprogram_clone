@@ -1,0 +1,7 @@
+<%= render "layouts/errors", :object => @chapter %>
+
+<%= form_for @chapter do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>

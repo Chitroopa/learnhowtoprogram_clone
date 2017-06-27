@@ -1,0 +1,6 @@
+<%= link_to "Next", section_lesson_path(@section, @lesson),
+                         :data => {                                       :method => "patch"} %>
+<h1><%= link_to @section.chapter.title, chapter_path(@section.chapter) %> / <%= link_to @section.heading, chapter_section_path(@section.chapter, @section)%> / <%=@lesson.name%></h1>
+<p>
+  <%=@lesson.content%>
+</p>
